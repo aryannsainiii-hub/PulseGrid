@@ -34,7 +34,7 @@ export default function History() {
         </div>
         {list.error ? <ErrorBox error={list.error} onRetry={list.reload} /> : !list.data ? <Spinner /> : list.data.length === 0 ? (
           <Empty title="No simulation runs" hint={q || severity ? 'Nothing matches your filters.' : 'Run a scenario and it will be saved here.'} action={<Link className="btn-primary" to="/simulations">Run a simulation</Link>} />
-        ) : (
+        ) : (   
           <div className="overflow-x-auto"><table className="w-full min-w-[720px]"><thead><tr>
             {th('name', 'Scenario')}{th('created_at', 'Date & time')}{th('severity', 'Severity')}{th('affected_count', 'Affected systems')}{th('overall_impact', 'Overall impact')}<th>Best-ranked strategy</th><th /></tr></thead><tbody>
             {list.data.map((r) => (
@@ -47,3 +47,4 @@ export default function History() {
     </>
   )
 }
+// m
