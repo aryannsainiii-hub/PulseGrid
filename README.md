@@ -99,7 +99,7 @@ For node *n* at step *k*:
 Overall impact per step = criticality-weighted mean capacity loss over all nodes; the headline figure is the **peak**.
 Cascade path/depth are derived from the dominant dependency at each node's first impact. Same config ⇒ byte-identical results.
 
-## 9. Response scoring
+## 9. Response scoringg
 Strategies are intervention bundles evaluated by **re-running the simulation**: A *Critical Load Prioritisation*, B *Resource Reallocation* (portable generators / oxygen cylinders / IT failover / surge staff matched to the disruption), C *Combined* (A + B + alternative-supply escalation).
 ```
 raw   = w_cov·coverage − w_res·resource_use − w_rec·recovery_delay − w_viol·violation_share     (each term 0..1)
