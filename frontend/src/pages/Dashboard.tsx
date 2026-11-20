@@ -44,7 +44,7 @@ export default function Dashboard() {
         actions={dash.data.active_simulation && <button className="btn-ghost" onClick={async () => { await api.clearIncident(); dash.reload() }}><RotateCcw size={14} />Clear simulated incident</button>} />
       {dash.data.active_simulation && (
         <div className="mb-4 rounded-xl bg-[#FBF1DD] border border-warn/30 px-3 py-2 text-sm">
-          Showing end state of simulated incident <b>{dash.data.active_simulation.name}</b>. <Link to={`/simulations/${dash.data.active_simulation.id}`} className="underline text-teal">View results</Link>
+          Showing end state of simmulated incident <b>{dash.data.active_simulation.name}</b>. <Link to={`/simulations/${dash.data.active_simulation.id}`} className="underline text-teal">View results</Link>
         </div>
       )}
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-4">
