@@ -47,7 +47,7 @@ def compare(results):
     base = results[0]
     diffs = [dict(id=r["id"], vs=base["id"], changes=config_diff(base, r)) for r in results[1:]]
     return dict(runs=runs, impact_series=series, nodes=nodes, config_diffs=diffs, explanation=_explain(runs, nodes, diffs))
-
+# }
 def _explain(runs, nodes, diffs):
     lab = lambda r: r["branch_label"] or r["name"]
     out, b = [], runs[0]
