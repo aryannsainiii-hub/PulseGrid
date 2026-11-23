@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://YOUR-BACKEND.onrender.com/api/$1"
+      "source": "/api/:path*",
+      "destination": "https://pulsegrid-api-devc.onrender.com/api/:path*"
     },
     {
       "source": "/(.*)",
